@@ -468,6 +468,7 @@ h6 {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  row-gap: 6.25rem;
   padding-inline: .625rem
 }
 .footer__column {
@@ -478,6 +479,9 @@ h6 {
   font-size: 1.25rem;
   font-weight: 500;
   line-height: 1.25
+}
+.footer__title:not(:last-child) {
+  margin-bottom: 3.25rem
 }
 .footer__list li:not(:last-child) {
   margin-bottom: 2.1875rem
@@ -1335,12 +1339,6 @@ h6 {
     -moz-column-gap: 1.875rem;
     column-gap: 1.875rem
   }
-  .footer__row {
-    row-gap: 6.25rem
-  }
-  .footer__title:not(:last-child) {
-    margin-bottom: 3.25rem
-  }
   .footer__body {
     -webkit-column-gap: 1.25rem;
     -moz-column-gap: 1.25rem;
@@ -1713,12 +1711,6 @@ h6 {
     -moz-column-gap: 1.25rem;
     column-gap: 1.25rem
   }
-  .footer__row {
-    row-gap: 6.25rem
-  }
-  .footer__title:not(:last-child) {
-    margin-bottom: 3.25rem
-  }
   .footer__body {
     -webkit-column-gap: .625rem;
     -moz-column-gap: .625rem;
@@ -2038,12 +2030,6 @@ h6 {
     -webkit-column-gap: clamp(1.25rem ,1.0630841121rem + .9345794393vw ,1.875rem);
     -moz-column-gap: clamp(1.25rem ,1.0630841121rem + .9345794393vw ,1.875rem);
     column-gap: clamp(1.25rem ,1.0630841121rem + .9345794393vw ,1.875rem)
-  }
-  .footer__row {
-    row-gap: clamp(6.25rem ,6.25rem + 0 ,6.25rem)
-  }
-  .footer__title:not(:last-child) {
-    margin-bottom: clamp(3.25rem ,3.25rem + 0 ,3.25rem)
   }
   .footer__body {
     -webkit-column-gap: clamp(.625rem ,.4380841121rem + .9345794393vw ,1.25rem);
