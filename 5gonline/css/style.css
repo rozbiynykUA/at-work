@@ -479,6 +479,9 @@ h6 {
   font-weight: 500;
   line-height: 1.25
 }
+.footer__list li:not(:last-child) {
+  margin-bottom: 2.1875rem
+}
 .footer__list a {
   color: rgba(255,255,255,.7);
   line-height: 1.25;
@@ -528,32 +531,16 @@ h6 {
   aspect-ratio: 37.2/32.35
 }
 .page__products {
-  padding-top: 3.75rem;
-  padding-bottom: 6.25rem
-}
-.page__discover {
-  padding-top: 5rem;
-  padding-bottom: 5rem
+  padding-top: 3.75rem
 }
 .page__routers {
-  padding-top: 3.75rem;
-  padding-bottom: 6.25rem
+  padding-top: 3.75rem
 }
 .page__antennas {
-  padding-top: 3.75rem;
-  padding-bottom: 6.25rem
-}
-.page__application {
-  padding-top: 5.96875rem;
-  padding-bottom: 5.96875rem
+  padding-top: 3.75rem
 }
 .page__dongles {
-  padding-top: 3.75rem;
-  padding-bottom: 6.25rem
-}
-.page__blog {
-  padding-top: 6.25rem;
-  padding-bottom: 6.25rem
+  padding-top: 3.75rem
 }
 .hero-home {
   background-color: var(--secondary)
@@ -1354,9 +1341,6 @@ h6 {
   .footer__title:not(:last-child) {
     margin-bottom: 3.25rem
   }
-  .footer__list li:not(:last-child) {
-    margin-bottom: 2.1875rem
-  }
   .footer__body {
     -webkit-column-gap: 1.25rem;
     -moz-column-gap: 1.25rem;
@@ -1371,6 +1355,36 @@ h6 {
     -webkit-column-gap: 2.5rem;
     -moz-column-gap: 2.5rem;
     column-gap: 2.5rem
+  }
+  .page__products {
+    padding-bottom: 6.25rem
+  }
+  .page__discover {
+    padding-top: 5rem
+  }
+  .page__discover {
+    padding-bottom: 5rem
+  }
+  .page__routers {
+    padding-bottom: 6.25rem
+  }
+  .page__antennas {
+    padding-bottom: 6.25rem
+  }
+  .page__application {
+    padding-top: 5.96875rem
+  }
+  .page__application {
+    padding-bottom: 5.96875rem
+  }
+  .page__dongles {
+    padding-bottom: 6.25rem
+  }
+  .page__blog {
+    padding-top: 6.25rem
+  }
+  .page__blog {
+    padding-bottom: 6.25rem
   }
   .slide-hero-home__title {
     font-size: 4rem
@@ -1705,9 +1719,6 @@ h6 {
   .footer__title:not(:last-child) {
     margin-bottom: 3.25rem
   }
-  .footer__list li:not(:last-child) {
-    margin-bottom: 2.1875rem
-  }
   .footer__body {
     -webkit-column-gap: .625rem;
     -moz-column-gap: .625rem;
@@ -1722,6 +1733,36 @@ h6 {
     -webkit-column-gap: 1.25rem;
     -moz-column-gap: 1.25rem;
     column-gap: 1.25rem
+  }
+  .page__products {
+    padding-bottom: 3.75rem
+  }
+  .page__discover {
+    padding-top: 3.75rem
+  }
+  .page__discover {
+    padding-bottom: 3.75rem
+  }
+  .page__routers {
+    padding-bottom: 3.75rem
+  }
+  .page__antennas {
+    padding-bottom: 3.75rem
+  }
+  .page__application {
+    padding-top: 3.75rem
+  }
+  .page__application {
+    padding-bottom: 3.75rem
+  }
+  .page__dongles {
+    padding-bottom: 3.75rem
+  }
+  .page__blog {
+    padding-top: 3.75rem
+  }
+  .page__blog {
+    padding-bottom: 3.75rem
   }
   .slide-hero-home__title {
     font-size: 2.25rem
@@ -2004,9 +2045,6 @@ h6 {
   .footer__title:not(:last-child) {
     margin-bottom: clamp(3.25rem ,3.25rem + 0 ,3.25rem)
   }
-  .footer__list li:not(:last-child) {
-    margin-bottom: clamp(2.1875rem ,2.1875rem + 0 ,2.1875rem)
-  }
   .footer__body {
     -webkit-column-gap: clamp(.625rem ,.4380841121rem + .9345794393vw ,1.25rem);
     -moz-column-gap: clamp(.625rem ,.4380841121rem + .9345794393vw ,1.25rem);
@@ -2021,6 +2059,36 @@ h6 {
     -webkit-column-gap: clamp(1.25rem ,.8761682243rem + 1.8691588785vw ,2.5rem);
     -moz-column-gap: clamp(1.25rem ,.8761682243rem + 1.8691588785vw ,2.5rem);
     column-gap: clamp(1.25rem ,.8761682243rem + 1.8691588785vw ,2.5rem)
+  }
+  .page__products {
+    padding-bottom: clamp(3.75rem ,3.0023364486rem + 3.738317757vw ,6.25rem)
+  }
+  .page__discover {
+    padding-top: clamp(3.75rem ,3.3761682243rem + 1.8691588785vw ,5rem)
+  }
+  .page__discover {
+    padding-bottom: clamp(3.75rem ,3.3761682243rem + 1.8691588785vw ,5rem)
+  }
+  .page__routers {
+    padding-bottom: clamp(3.75rem ,3.0023364486rem + 3.738317757vw ,6.25rem)
+  }
+  .page__antennas {
+    padding-bottom: clamp(3.75rem ,3.0023364486rem + 3.738317757vw ,6.25rem)
+  }
+  .page__application {
+    padding-top: clamp(3.75rem ,3.0864485981rem + 3.3177570093vw ,5.96875rem)
+  }
+  .page__application {
+    padding-bottom: clamp(3.75rem ,3.0864485981rem + 3.3177570093vw ,5.96875rem)
+  }
+  .page__dongles {
+    padding-bottom: clamp(3.75rem ,3.0023364486rem + 3.738317757vw ,6.25rem)
+  }
+  .page__blog {
+    padding-top: clamp(3.75rem ,3.0023364486rem + 3.738317757vw ,6.25rem)
+  }
+  .page__blog {
+    padding-bottom: clamp(3.75rem ,3.0023364486rem + 3.738317757vw ,6.25rem)
   }
   .slide-hero-home__title {
     font-size: clamp(2.25rem ,1.726635514rem + 2.6168224299vw ,4rem)
