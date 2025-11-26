@@ -2599,9 +2599,6 @@ h6 {
   .contacts__info {
     flex-direction: column
   }
-  .hero-blog__container {
-    min-height: 100vh
-  }
   .controls-gallery-blog__button.active {
     flex-basis: 47%
   }
@@ -2641,9 +2638,9 @@ h6 {
     max-width: 75%
   }
 }
-@media (max-width:41.87375em) {
-  .contacts__image {
-    display: none
+@media (max-width:41.5625em) {
+  .contacts__image img {
+    min-width: 13.8125rem
   }
 }
 @media (max-width:40.68625em) {
