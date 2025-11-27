@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Blog Page</title>
+	<title>Blog Detail Page</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -56,54 +56,80 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="page__hero-blog hero-blog">
-				<div class="hero-blog__container">
-					<div class="hero-blog__content">
-						<h1 class="hero-blog__title">Learn, Compare, and Connect Better</h1>
-						<div class="hero-blog__text">
-							<p>
-								The latest tips, reviews, and insights on 4G & 5G devices for home and business.
-							</p>
-						</div>
-					</div>
+			<section class="page__hero-blog-detail hero-blog-detail">
+				<div class="hero-blog-detail__container">
+					<ul class="hero-blog-detail__broadcrumbs broadcrumbs">
+						<li class="broadcrumbs__item">
+							<a href="#" class="broadcrumbs__link">Home</a>
+						</li>
+						<li class="broadcrumbs__item">
+							<a href="#" class="broadcrumbs__link">Blog</a>
+						</li>
+						<li class="broadcrumbs__item">
+							<a href="#" class="broadcrumbs__link active">Maximizing Home Internet with 5G Routers</a>
+						</li>
+					</ul>
 				</div>
-				<div class="hero-blog__image">
-					<img src="img/blog-page/hero/hero-bg.webp" alt="4G & 5G devices for home and office">
+				<div class="hero-blog-detail__image">
+					<img src="img/blog-detail-page/hero/hero-bg.webp" alt="Image of a working 4G/5G router">
 				</div>
 			</section>
-			<section class="page__gallery-blog gallery-blog">
-				<div class="gallery-blog__container">
-					<div class="gallery-blog__controls controls-gallery-blog">
-						<button type="button" class="controls-gallery-blog__button active">All</button>
-						<button type="button" class="controls-gallery-blog__button">Guides</button>
-						<button type="button" class="controls-gallery-blog__button">Comparisons</button>
-						<button type="button" class="controls-gallery-blog__button">Reviews</button>
-						<button type="button" class="controls-gallery-blog__button">Tips & Tricks</button>
-						<button type="button" class="controls-gallery-blog__button">News</button>
+			<div class="page__blog-detail-main blog-detail-main">
+				<div class="blog-detail-main__container">
+					<div class="blog-detail-main__aside aside-blog-detail-main">
+						<div class="aside-blog-detail-main__date"><data value="2025-10-16">16 Oct 2025</data></div>
+						<ul class="aside-blog-detail-main__social social">
+							<li class="social__item">
+								<a href="#" target="_blank" aria-label="go to linkedin" class="social__link"><img src="img/subscribe/linkedin.webp" alt="Linkedin icon"></a>
+							</li>
+							<li class="social__item">
+								<a href="#" target="_blank" aria-label="go to x" class="social__link"><img src="img/subscribe/x.webp" alt="X icon"></a>
+							</li>
+							<li class="social__item">
+								<a href="#" target="_blank" aria-label="go to youtube" class="social__link"><img src="img/subscribe/youtube.webp" alt="YouTube icon"></a>
+							</li>
+							<li class="social__item">
+								<a href="#" target="_blank" aria-label="go to facebook" class="social__link"><img src="img/subscribe/facebook.webp" alt="Facebook icon"></a>
+							</li>
+						</ul>
 					</div>
-					<ul class="gallery-blog__list">
-						<li class="gallery-blog__item">
-							<article class="gallery-blog__post post-blog">
-								<div class="post-blog__image">
-									<img src="img/blog/best-5g-router.webp" alt="Image of the best 5G router for your home or office">
-								</div>
-								<div class="post-blog__content">
-									<h3 class="post-blog__title">How to Choose the Best 5G Router for Your Home or Office</h3>
-									<div class="post-blog__text">
-										<p>
-											With 5G technology transforming the way we connect to the internet, having the right router is now more crucial
-											than
-											ever. Whether you’re working remotely, managing a smart home, or running a small business, a reliable 5G router
-											can
-											dramatically improve your online experience. Here’s how to choose the best one for your needs.
-										</p>
-									</div>
-								</div>
-								<a href="#" class="post-blog__link">Read More<span><img src="img/blog/vector-link.svg" alt="Vector left icon"></span></a>
-							</article>
-						</li>
-						<li class="gallery-blog__item">
-							<article class="gallery-blog__post post-blog">
+					<article class="blog-detail-main__content">
+						<div class="blog-detail-main__category">Guides</div>
+						<h2 class="blog-detail-main__title title title--big">Maximizing Home Internet with 5G Routers</h2>
+						<div class="blog-detail-main__text">
+							<p>
+								Discover how 5G routers are revolutionizing home internet, providing lightning-fast speeds, ultra-low latency, and
+								seamless connectivity for all your smart devices. Unlike traditional broadband, 5G home routers eliminate the need for
+								physical cables, allowing users to enjoy high-speed internet anywhere with strong network coverage.
+							</p>
+							<p>
+								With the rise of remote work, online gaming, and streaming services, 5G routers are transforming how we stay connected
+								offering consistent performance even in busy households. They also bring greater flexibility and portability, making
+								them perfect for digital nomads or families on the move.
+							</p>
+							<p>
+								As technology continues to advance, 5G routers are expected to become the standard for modern homes, powering everything
+								from smart appliances to virtual reality experiences. In short, they’re not just enhancing internet access they’re
+								reshaping the future of connectivity.
+							</p>
+						</div>
+						<div class="blog-detail-main__footer footer-blog-detail-main">
+							<div class="footer-blog-detail-main__author"><span>Author:</span>By 5G Online</div>
+							<div class="footer-blog-detail-main__date"><data value="2025-10-16"></data><span>Date:</span>October 16, 2025</div>
+							<div class="footer-blog-detail-main__timereading"><span>Reading time:</span> 3 min read</div>
+						</div>
+					</article>
+				</div>
+			</div>
+			<section class="page__related-blog-detail related-blog-detail">
+				<div class="related-blog-detail__container">
+					<div class="related-blog-detail__header">
+						<div class="related-blog-detail__label">Related Articles</div>
+						<h2 class="related-blog-detail__title title title--midle">You Might Also Like</h2>
+					</div>
+					<ul class="related-blog-detail__list">
+						<li class="related-blog-detail__item">
+							<article class="related-blog-detail__post post-blog">
 								<div class="post-blog__image">
 									<img src="img/blog/boosting-4g-5g-signal.webp" alt="Image of a powerful data network">
 								</div>
@@ -113,7 +139,8 @@
 										<p>
 											Even the most powerful 4G or 5G router can’t perform at its best without the right antenna. Whether you’re
 											working in a
-											rural area, managing a mobile office, or simply looking for faster speeds at home, choosing the correct antenna
+											rural area, managing a mobile office, or simply looking for faster speeds at home, choosing the correct
+											antenna
 											can make
 											a world of difference. In this guide, we’ll explore how antennas impact signal quality and how to pick the
 											perfect one
@@ -124,8 +151,8 @@
 								<a href="#" class="post-blog__link">Read More<span><img src="img/blog/vector-link.svg" alt="Vector left icon"></span></a>
 							</article>
 						</li>
-						<li class="gallery-blog__item">
-							<article class="gallery-blog__post post-blog">
+						<li class="related-blog-detail__item">
+							<article class="related-blog-detail__post post-blog">
 								<div class="post-blog__image">
 									<img src="img/blog/choose-5g-router.webp" alt="Image of an illuminated question mark">
 								</div>
@@ -135,9 +162,11 @@
 										<p>
 											In today’s connected world, a fast and stable internet connection is no longer a luxury — it’s a necessity.
 											Whether
-											you’re working remotely, running a smart home, or managing multiple devices in an office, your router plays a
+											you’re working remotely, running a smart home, or managing multiple devices in an office, your router plays
+											a
 											critical
-											role. With the rise of 5G networks, 5G routers are becoming an excellent alternative to traditional broadband,
+											role. With the rise of 5G networks, 5G routers are becoming an excellent alternative to traditional
+											broadband,
 											offering
 											faster speeds and lower latency. But how do you choose the right one? Let’s break it down.
 										</p>
@@ -146,30 +175,8 @@
 								<a href="#" class="post-blog__link">Read More<span><img src="img/blog/vector-link.svg" alt="Vector left icon"></span></a>
 							</article>
 						</li>
-						<li class="gallery-blog__item">
-							<article class="gallery-blog__post post-blog">
-								<div class="post-blog__image">
-									<img src="img/blog/stronger-connectivity.webp" alt="Image of a powerful antennafor a strong signal">
-								</div>
-								<div class="post-blog__content">
-									<h3 class="post-blog__title">Choosing the Right Antenna for Stronger Connectivity</h3>
-									<div class="post-blog__text">
-										<p>
-											In an age where seamless internet access powers both work and entertainment, signal strength matters more than
-											ever.
-											Whether you’re using a 4G/5G router, WiFi extender, or IoT device, the antenna you choose can dramatically
-											influence
-											your connection’s performance. Selecting the right antenna isn’t just about range — it’s about stability,
-											direction, and
-											efficiency. Here’s how to make the right choice.
-										</p>
-									</div>
-								</div>
-								<a href="#" class="post-blog__link">Read More<span><img src="img/blog/vector-link.svg" alt="Vector left icon"></span></a>
-							</article>
-						</li>
-						<li class="gallery-blog__item">
-							<article class="gallery-blog__post post-blog">
+						<li class="related-blog-detail__item">
+							<article class="related-blog-detail__post post-blog">
 								<div class="post-blog__image">
 									<img src="img/blog/one-router-bundles.webp" alt="Image of a chaotic internet connection">
 								</div>
@@ -179,33 +186,12 @@
 										<p>
 											In today’s fast-paced digital world, setting up a reliable internet connection shouldn’t require hours of
 											configuration
-											or multiple purchases. That’s where All-in-One Router Bundles come in. Designed to combine everything you need
+											or multiple purchases. That’s where All-in-One Router Bundles come in. Designed to combine everything you
+											need
 											— from
 											routers and antennas to power supplies and SIM support — these bundles make it easier than ever to get
 											connected,
 											wherever you are.
-										</p>
-									</div>
-								</div>
-								<a href="#" class="post-blog__link">Read More<span><img src="img/blog/vector-link.svg" alt="Vector left icon"></span></a>
-							</article>
-						</li>
-						<li class="gallery-blog__item">
-							<article class="gallery-blog__post post-blog">
-								<div class="post-blog__image">
-									<img src="img/blog/4g-vs-5g.webp" alt="Image of speed measurement using the speedtest service">
-								</div>
-								<div class="post-blog__content">
-									<h3 class="post-blog__title">4G vs 5G: Which One Is Right for You?</h3>
-									<div class="post-blog__text">
-										<p>
-											The shift from 4G to 5G has been one of the biggest leaps in mobile connectivity — promising faster speeds,
-											lower
-											latency, and smarter networks. But while 5G is the future, 4G still powers millions of homes, offices, and
-											devices
-											worldwide. So, when it comes to choosing your router or data plan, which one is truly right for you? Let’s
-											break down
-											the differences to help you make the best choice.
 										</p>
 									</div>
 								</div>
