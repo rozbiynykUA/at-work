@@ -1030,6 +1030,46 @@ h6 {
   grid-template-columns: repeat(auto-fit,minmax(min(21.5625rem,100%),1fr));
   gap: 1.875rem
 }
+.hero-order-confirmation__container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 42.3125rem
+}
+.hero-order-confirmation__image {
+  aspect-ratio: 1/1;
+  width: 5.375rem
+}
+.hero-order-confirmation__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain
+}
+.hero-order-confirmation__image:not(:last-child) {
+  margin-bottom: 1.5625rem
+}
+.hero-order-confirmation__title {
+  font-size: 2.25rem;
+  line-height: 1.25;
+  color: var(--text-black)
+}
+.hero-order-confirmation__title:not(:last-child) {
+  margin-bottom: 1.0625rem
+}
+.hero-order-confirmation__subtitle {
+  text-transform: uppercase;
+  line-height: 1.25
+}
+.hero-order-confirmation__subtitle span {
+  color: var(--text-accent);
+  padding-left: .3125rem
+}
+.hero-order-confirmation__button {
+  width: 100%
+}
 .page__products {
   padding-top: 3.75rem
 }
@@ -2062,6 +2102,21 @@ h6 {
   .related-blog-detail__label {
     font-size: 1.25rem
   }
+  .page__hero-order-confirmation {
+    padding-top: 5rem
+  }
+  .page__hero-order-confirmation {
+    padding-bottom: 5rem
+  }
+  .hero-order-confirmation__subtitle:not(:last-child) {
+    margin-bottom: 2.1875rem
+  }
+  .hero-order-confirmation__button {
+    padding-left: 5.25rem
+  }
+  .hero-order-confirmation__button {
+    padding-right: 5.25rem
+  }
   .page__products {
     padding-bottom: 6.25rem
   }
@@ -2683,6 +2738,21 @@ h6 {
   .related-blog-detail__label {
     font-size: 1.125rem
   }
+  .page__hero-order-confirmation {
+    padding-top: 2.5rem
+  }
+  .page__hero-order-confirmation {
+    padding-bottom: 2.5rem
+  }
+  .hero-order-confirmation__subtitle:not(:last-child) {
+    margin-bottom: 1.5625rem
+  }
+  .hero-order-confirmation__button {
+    padding-left: 3.75rem
+  }
+  .hero-order-confirmation__button {
+    padding-right: 3.75rem
+  }
   .page__products {
     padding-bottom: 3.75rem
   }
@@ -3037,6 +3107,9 @@ h6 {
     align-items: flex-start;
     row-gap: 1.25rem
   }
+  .hero-order-confirmation__actions {
+    width: 100%
+  }
 }
 @media (min-width:20em)and (max-width:86.875em) {
   .button--cards {
@@ -3334,6 +3407,21 @@ h6 {
   }
   .related-blog-detail__label {
     font-size: clamp(1.125rem ,1.0876168224rem + .1869158879vw ,1.25rem)
+  }
+  .page__hero-order-confirmation {
+    padding-top: clamp(2.5rem ,1.7523364486rem + 3.738317757vw ,5rem)
+  }
+  .page__hero-order-confirmation {
+    padding-bottom: clamp(2.5rem ,1.7523364486rem + 3.738317757vw ,5rem)
+  }
+  .hero-order-confirmation__subtitle:not(:last-child) {
+    margin-bottom: clamp(1.5625rem ,1.3755841121rem + .9345794393vw ,2.1875rem)
+  }
+  .hero-order-confirmation__button {
+    padding-left: clamp(3.75rem ,3.3014018692rem + 2.2429906542vw ,5.25rem)
+  }
+  .hero-order-confirmation__button {
+    padding-right: clamp(3.75rem ,3.3014018692rem + 2.2429906542vw ,5.25rem)
   }
   .page__products {
     padding-bottom: clamp(3.75rem ,3.0023364486rem + 3.738317757vw ,6.25rem)
