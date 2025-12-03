@@ -570,21 +570,33 @@ h6 {
   border: .125rem solid rgba(22,25,33,.04);
   border-radius: .25rem
 }
-.need-help__text {
+.need-help__title {
   color: var(--text-accent);
   line-height: 1.25
 }
-.need-help__text p:not(:last-child) {
+.need-help__title p:not(:last-child) {
   margin-bottom: .625rem
 }
-.text-block__text {
+.title-block {
   border: .125rem solid rgba(22,25,33,.04);
   border-radius: .25rem;
   color: var(--text-accent);
-  line-height: 1.25
+  line-height: 1.25;
+  display: flex;
+  align-items: center
 }
-.text-block__text p:not(:last-child) {
+.title-block p:not(:last-child) {
   margin-bottom: .625rem
+}
+.title-block span img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain
+}
+.actions-back__button {
+  padding-block: .65625rem;
+  font-size: 1.25rem
 }
 .header__container {
   display: flex;
@@ -1828,6 +1840,276 @@ h6 {
   background-color: var(--primary);
   color: var(--text-accent)
 }
+.page__hero-returns-refunds {
+  padding-top: 5rem
+}
+.page__actions-returns-refunds {
+  padding-bottom: 5rem
+}
+.hero-returns-refunds__body {
+  background: #f5f8ff;
+  border-radius: .875rem;
+  position: relative
+}
+.hero-returns-refunds__body::after {
+  content: "";
+  background: url(../img/returns-refunds/hero/return-request-icon.svg) center/100% no-repeat;
+  aspect-ratio: 1/1;
+  width: 18.602941%;
+  max-width: 17.0625rem;
+  min-width: 6.25rem;
+  position: absolute;
+  bottom: -1%;
+  right: 0
+}
+.hero-returns-refunds__title {
+  font-weight: 500;
+  line-height: 1.26;
+  color: var(--text-accent)
+}
+.hero-returns-refunds__text {
+  max-width: 46.875rem;
+  line-height: 1.25;
+  text-align: justify
+}
+.hero-returns-refunds__text p:not(:last-child) {
+  margin-bottom: .625rem
+}
+.hero-returns-refunds__actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5625rem
+}
+.hero-returns-refunds__button {
+  border-radius: 4.25rem;
+  font-size: 1.25rem
+}
+.policy-returns-refunds__body {
+  border: .125rem solid rgba(22,25,33,.04);
+  border-radius: .25rem
+}
+.policy-returns-refunds__list {
+  display: flex;
+  flex-direction: column
+}
+.item-policy-returns-refunds {
+  border: 2px solid rgba(22,25,33,.04);
+  border-radius: .25rem;
+  display: flex;
+  align-items: center
+}
+.item-policy-returns-refunds__body {
+  flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  -webkit-column-gap: .9375rem;
+  -moz-column-gap: .9375rem;
+  column-gap: .9375rem
+}
+.item-policy-returns-refunds__content {
+  flex-basis: 75%
+}
+.item-policy-returns-refunds__title {
+  line-height: 1.25;
+  color: var(--text-accent)
+}
+.item-policy-returns-refunds__text {
+  max-width: 46.5rem;
+  line-height: 1.25
+}
+.item-policy-returns-refunds__subtext {
+  line-height: 1.2;
+  opacity: .4
+}
+.item-policy-returns-refunds__image {
+  flex-shrink: 0;
+  width: 10.938%;
+  aspect-ratio: 1/1;
+  min-width: 3.9375rem
+}
+.item-policy-returns-refunds__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain
+}
+.guide-returns-refunds__body {
+  border: .125rem solid rgba(22,25,33,.04);
+  border-radius: .25rem
+}
+.guide-returns-refunds__list {
+  display: flex;
+  flex-direction: column;
+  counter-reset: item
+}
+.guide-returns-refunds__item {
+  border: .125rem solid rgba(22,25,33,.04);
+  border-radius: .25rem;
+  display: flex;
+  align-items: center
+}
+.guide-returns-refunds__item::before {
+  counter-increment: item;
+  content: counter(item);
+  line-height: 1.26;
+  color: var(--text-accent);
+  border: .375rem solid var(--text-accent);
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0
+}
+.guide-returns-refunds__text {
+  line-height: 1.25
+}
+.guide-returns-refunds__subtext {
+  line-height: 1.25;
+  color: var(--text-accent)
+}
+.page__hero-payments-billing {
+  padding-top: 5rem
+}
+.page__actions-payments-billing {
+  padding-bottom: 5rem
+}
+.hero-payments-billing__body {
+  background: #f5f8ff;
+  border-radius: .875rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 25.375rem
+}
+.hero-payments-billing__body::after {
+  content: "";
+  background: url(../img/payments-billing-page/hero/credit-card-icon.svg) center/100% no-repeat;
+  aspect-ratio: 294/231;
+  width: 21.617647%;
+  max-width: 18.375rem;
+  min-width: 6.25rem;
+  position: absolute;
+  bottom: -2.5%;
+  right: 0
+}
+.hero-payments-billing__title {
+  font-weight: 500;
+  line-height: 1.26;
+  color: var(--text-accent)
+}
+.hero-payments-billing__text {
+  max-width: 50rem;
+  line-height: 1.25;
+  text-align: justify
+}
+.hero-payments-billing__text p:not(:last-child) {
+  margin-bottom: .625rem
+}
+.methods-payments-billing__protected {
+  line-height: 1.25;
+  background-color: var(--text-accent);
+  color: var(--primary);
+  padding-block: .625rem;
+  width: 100%;
+  text-align: center;
+  border: .1875rem solid rgba(22,25,33,.05);
+  border-radius: 3.9375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.methods-payments-billing__protected::before {
+  content: "";
+  background: url(../img/payments-billing-page/secure/secure-icon.svg) center/100% no-repeat;
+  width: 2.375rem;
+  aspect-ratio: 1/1;
+  flex-shrink: 0
+}
+.methods-payments-billing__list {
+  border: .125rem solid rgba(22,25,33,.04);
+  border-radius: .25rem;
+  display: flex;
+  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2,1fr)
+}
+.item-methods-payments-billing {
+  aspect-ratio: 580/376
+}
+.item-methods-payments-billing__content {
+  border: .125rem solid rgba(22,25,33,.04);
+  border-radius: .25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center
+}
+.item-methods-payments-billing__image {
+  aspect-ratio: 1/1
+}
+.item-methods-payments-billing__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain
+}
+.item-methods-payments-billing__title {
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--text-accent)
+}
+.item-methods-payments-billing__text {
+  max-width: 21.25rem;
+  line-height: 1.25
+}
+.invoices-payments-billing__list {
+  border: .125rem solid rgba(22,25,33,.04);
+  border-radius: .25rem
+}
+.invoices-payments-billing__item {
+  border: .125rem solid rgba(22,25,33,.04);
+  border-radius: 2.75rem;
+  line-height: 1.25;
+  color: var(--text-black);
+  display: flex;
+  align-items: center
+}
+.invoices-payments-billing__item::before {
+  content: "";
+  background: url(../img/payments-billing-page/invoces/symbols-check-icon.svg) center/100% no-repeat;
+  width: 1.875rem;
+  aspect-ratio: 1/1;
+  flex-shrink: 0
+}
+.invoices-payments-billing__item:not(:last-child) {
+  margin-bottom: .75rem
+}
+.adjustments-payments-billing__list {
+  border: .125rem solid rgba(22,25,33,.04);
+  border-radius: .25rem
+}
+.adjustments-payments-billing__item {
+  border: .125rem solid rgba(22,25,33,.04);
+  border-radius: 2.75rem;
+  line-height: 1.25;
+  color: var(--text-black);
+  display: flex;
+  align-items: center
+}
+.adjustments-payments-billing__item::before {
+  content: "";
+  background: url(../img/payments-billing-page/invoces/symbols-check-icon.svg) center/100% no-repeat;
+  width: 1.875rem;
+  aspect-ratio: 1/1;
+  flex-shrink: 0
+}
+.adjustments-payments-billing__item:not(:last-child) {
+  margin-bottom: .75rem
+}
 .page__categories {
   padding-bottom: 1.25rem
 }
@@ -2704,23 +2986,43 @@ h6 {
   .need-help__body {
     padding-right: 3.125rem
   }
-  .need-help__text {
+  .need-help__title {
     font-size: 3rem
   }
-  .text-block__text {
+  .title-block {
     padding-top: 3.125rem
   }
-  .text-block__text {
+  .title-block {
     padding-bottom: 3.125rem
   }
-  .text-block__text {
+  .title-block {
     padding-left: 3.125rem
   }
-  .text-block__text {
+  .title-block {
     padding-right: 3.125rem
   }
-  .text-block__text {
+  .title-block {
     font-size: 3rem
+  }
+  .title-block {
+    -webkit-column-gap: 1.5625rem;
+    -moz-column-gap: 1.5625rem;
+    column-gap: 1.5625rem
+  }
+  .title-block span {
+    width: 2.8125rem
+  }
+  .title-block span {
+    height: 2.8125rem
+  }
+  .answers-block__title:not(:last-child) {
+    margin-bottom: 3.125rem
+  }
+  .actions-back__button {
+    padding-left: 8.25rem
+  }
+  .actions-back__button {
+    padding-right: 8.25rem
   }
   .header__container {
     -webkit-column-gap: .625rem;
@@ -3381,6 +3683,350 @@ h6 {
   .actions-guide-setup-guide-3__body {
     gap: 2.1875rem
   }
+  .page__hero-returns-refunds {
+    padding-bottom: 3.125rem
+  }
+  .page__policy-returns-refunds {
+    padding-top: 3.125rem
+  }
+  .page__policy-returns-refunds {
+    padding-bottom: 3.125rem
+  }
+  .page__guide-returns-refunds {
+    padding-top: 3.125rem
+  }
+  .page__guide-returns-refunds {
+    padding-bottom: 3.125rem
+  }
+  .page__answers-returns-refunds {
+    padding-top: 3.125rem
+  }
+  .page__answers-returns-refunds {
+    padding-bottom: 3.125rem
+  }
+  .page__need-returns-refunds {
+    padding-top: 3.125rem
+  }
+  .page__need-returns-refunds {
+    padding-bottom: 3.125rem
+  }
+  .page__actions-returns-refunds {
+    padding-top: 3.125rem
+  }
+  .hero-returns-refunds__body {
+    padding-top: 3.75rem
+  }
+  .hero-returns-refunds__body {
+    padding-bottom: 3.75rem
+  }
+  .hero-returns-refunds__body {
+    padding-left: 3.75rem
+  }
+  .hero-returns-refunds__body {
+    padding-right: 3.75rem
+  }
+  .hero-returns-refunds__title {
+    font-size: 6.25rem
+  }
+  .hero-returns-refunds__title:not(:last-child) {
+    margin-bottom: 1.1875rem
+  }
+  .hero-returns-refunds__text {
+    font-size: 1.75rem
+  }
+  .hero-returns-refunds__text:not(:last-child) {
+    margin-bottom: 4.9375rem
+  }
+  .hero-returns-refunds__button {
+    padding-top: 1.21875rem
+  }
+  .hero-returns-refunds__button {
+    padding-bottom: 1.21875rem
+  }
+  .hero-returns-refunds__button {
+    padding-left: 4.78125rem
+  }
+  .hero-returns-refunds__button {
+    padding-right: 4.78125rem
+  }
+  .policy-returns-refunds__title:not(:last-child) {
+    margin-bottom: 3.125rem
+  }
+  .policy-returns-refunds__body {
+    padding-top: 3.125rem
+  }
+  .policy-returns-refunds__body {
+    padding-bottom: 3.125rem
+  }
+  .policy-returns-refunds__body {
+    padding-left: 3.125rem
+  }
+  .policy-returns-refunds__body {
+    padding-right: 3.125rem
+  }
+  .policy-returns-refunds__list {
+    row-gap: 3.125rem
+  }
+  .item-policy-returns-refunds {
+    padding-right: 3.125rem
+  }
+  .item-policy-returns-refunds {
+    padding-left: 3.125rem
+  }
+  .item-policy-returns-refunds {
+    padding-top: 4.75rem
+  }
+  .item-policy-returns-refunds {
+    padding-bottom: 4.75rem
+  }
+  .item-policy-returns-refunds__title {
+    font-size: 3rem
+  }
+  .item-policy-returns-refunds__title:not(:last-child) {
+    margin-bottom: .625rem
+  }
+  .item-policy-returns-refunds__text {
+    font-size: 1.75rem
+  }
+  .item-policy-returns-refunds__subtext {
+    font-size: 1.25rem
+  }
+  .guide-returns-refunds__title:not(:last-child) {
+    margin-bottom: 3.125rem
+  }
+  .guide-returns-refunds__body {
+    padding-top: 3.125rem
+  }
+  .guide-returns-refunds__body {
+    padding-bottom: 3.125rem
+  }
+  .guide-returns-refunds__body {
+    padding-left: 3.125rem
+  }
+  .guide-returns-refunds__body {
+    padding-right: 3.125rem
+  }
+  .guide-returns-refunds__list {
+    row-gap: 3.125rem
+  }
+  .guide-returns-refunds__item {
+    padding-left: 3.125rem
+  }
+  .guide-returns-refunds__item {
+    padding-right: 3.125rem
+  }
+  .guide-returns-refunds__item {
+    padding-top: 3.09375rem
+  }
+  .guide-returns-refunds__item {
+    padding-bottom: 3.09375rem
+  }
+  .guide-returns-refunds__item {
+    -webkit-column-gap: 5.625rem;
+    -moz-column-gap: 5.625rem;
+    column-gap: 5.625rem
+  }
+  .guide-returns-refunds__item::before {
+    font-size: 4rem
+  }
+  .guide-returns-refunds__item::before {
+    width: 6.25rem
+  }
+  .guide-returns-refunds__text {
+    font-size: 2.5rem
+  }
+  .guide-returns-refunds__subtext {
+    font-size: 2.5rem
+  }
+  .page__hero-payments-billing {
+    padding-bottom: 3.125rem
+  }
+  .page__methods-payments-billing {
+    padding-top: 3.125rem
+  }
+  .page__methods-payments-billing {
+    padding-bottom: 3.125rem
+  }
+  .page__invoices-payments-billing {
+    padding-top: 3.125rem
+  }
+  .page__invoices-payments-billing {
+    padding-bottom: 3.125rem
+  }
+  .page__adjustments-payments-billing {
+    padding-top: 3.125rem
+  }
+  .page__adjustments-payments-billing {
+    padding-bottom: 3.125rem
+  }
+  .page__answers-payments-billing {
+    padding-top: 3.125rem
+  }
+  .page__answers-payments-billing {
+    padding-bottom: 3.125rem
+  }
+  .page__need-payments-billing {
+    padding-top: 3.125rem
+  }
+  .page__need-payments-billing {
+    padding-bottom: 3.125rem
+  }
+  .page__actions-payments-billing {
+    padding-top: 3.125rem
+  }
+  .hero-payments-billing__body {
+    padding-top: 3.75rem
+  }
+  .hero-payments-billing__body {
+    padding-bottom: 3.75rem
+  }
+  .hero-payments-billing__body {
+    padding-left: 3.75rem
+  }
+  .hero-payments-billing__body {
+    padding-right: 3.75rem
+  }
+  .hero-payments-billing__title {
+    font-size: 6.25rem
+  }
+  .hero-payments-billing__title:not(:last-child) {
+    margin-bottom: 1.1875rem
+  }
+  .hero-payments-billing__text {
+    font-size: 1.75rem
+  }
+  .methods-payments-billing__title:not(:last-child) {
+    margin-bottom: 3.125rem
+  }
+  .methods-payments-billing__protected {
+    font-size: 1.25rem
+  }
+  .methods-payments-billing__protected {
+    padding-left: 7.5rem
+  }
+  .methods-payments-billing__protected {
+    padding-right: 7.5rem
+  }
+  .methods-payments-billing__protected {
+    -webkit-column-gap: 2.5rem;
+    -moz-column-gap: 2.5rem;
+    column-gap: 2.5rem
+  }
+  .methods-payments-billing__protected:not(:last-child) {
+    margin-bottom: 3.125rem
+  }
+  .methods-payments-billing__list {
+    padding-top: 3.125rem
+  }
+  .methods-payments-billing__list {
+    padding-bottom: 3.125rem
+  }
+  .methods-payments-billing__list {
+    padding-left: 3.125rem
+  }
+  .methods-payments-billing__list {
+    padding-right: 3.125rem
+  }
+  .methods-payments-billing__list {
+    gap: 3.125rem
+  }
+  .item-methods-payments-billing__content {
+    padding-top: .9375rem
+  }
+  .item-methods-payments-billing__content {
+    padding-bottom: .9375rem
+  }
+  .item-methods-payments-billing__content {
+    padding-left: .9375rem
+  }
+  .item-methods-payments-billing__content {
+    padding-right: .9375rem
+  }
+  .item-methods-payments-billing__image {
+    width: 6.25rem
+  }
+  .item-methods-payments-billing__image:not(:last-child) {
+    margin-bottom: 1.5625rem
+  }
+  .item-methods-payments-billing__title {
+    font-size: 2.5rem
+  }
+  .item-methods-payments-billing__title:not(:last-child) {
+    margin-bottom: .625rem
+  }
+  .item-methods-payments-billing__text {
+    font-size: 1.5rem
+  }
+  .invoices-payments-billing__title:not(:last-child) {
+    margin-bottom: 3.125rem
+  }
+  .invoices-payments-billing__list {
+    padding-top: 3.125rem
+  }
+  .invoices-payments-billing__list {
+    padding-bottom: 3.125rem
+  }
+  .invoices-payments-billing__list {
+    padding-left: 3.125rem
+  }
+  .invoices-payments-billing__list {
+    padding-right: 5rem
+  }
+  .invoices-payments-billing__item {
+    padding-top: 1.5rem
+  }
+  .invoices-payments-billing__item {
+    padding-bottom: 1.5rem
+  }
+  .invoices-payments-billing__item {
+    font-size: 1.5rem
+  }
+  .invoices-payments-billing__item {
+    padding-left: 1.875rem
+  }
+  .invoices-payments-billing__item {
+    padding-right: 1.875rem
+  }
+  .invoices-payments-billing__item {
+    -webkit-column-gap: .9375rem;
+    -moz-column-gap: .9375rem;
+    column-gap: .9375rem
+  }
+  .adjustments-payments-billing__title:not(:last-child) {
+    margin-bottom: 3.125rem
+  }
+  .adjustments-payments-billing__list {
+    padding-top: 3.125rem
+  }
+  .adjustments-payments-billing__list {
+    padding-bottom: 3.125rem
+  }
+  .adjustments-payments-billing__list {
+    padding-left: 3.125rem
+  }
+  .adjustments-payments-billing__list {
+    padding-right: 5rem
+  }
+  .adjustments-payments-billing__item {
+    padding-top: 1.5rem
+  }
+  .adjustments-payments-billing__item {
+    padding-bottom: 1.5rem
+  }
+  .adjustments-payments-billing__item {
+    font-size: 1.5rem
+  }
+  .adjustments-payments-billing__item {
+    padding-left: 1.875rem
+  }
+  .adjustments-payments-billing__item {
+    padding-right: 1.875rem
+  }
+  .adjustments-payments-billing__item {
+    -webkit-column-gap: .9375rem;
+    -moz-column-gap: .9375rem;
+    column-gap: .9375rem
+  }
   .page__products {
     padding-bottom: 6.25rem
   }
@@ -3918,23 +4564,43 @@ h6 {
   .need-help__body {
     padding-right: 1.5625rem
   }
-  .need-help__text {
+  .need-help__title {
     font-size: 2.125rem
   }
-  .text-block__text {
-    padding-top: 1.5625rem
+  .title-block {
+    padding-top: 1.25rem
   }
-  .text-block__text {
-    padding-bottom: 1.5625rem
+  .title-block {
+    padding-bottom: 1.25rem
   }
-  .text-block__text {
-    padding-left: 1.5625rem
+  .title-block {
+    padding-left: 1.25rem
   }
-  .text-block__text {
-    padding-right: 1.5625rem
+  .title-block {
+    padding-right: 1.25rem
   }
-  .text-block__text {
-    font-size: 2.25rem
+  .title-block {
+    font-size: 1.75rem
+  }
+  .title-block {
+    -webkit-column-gap: .625rem;
+    -moz-column-gap: .625rem;
+    column-gap: .625rem
+  }
+  .title-block span {
+    width: 1.875rem
+  }
+  .title-block span {
+    height: 1.875rem
+  }
+  .answers-block__title:not(:last-child) {
+    margin-bottom: 1.5625rem
+  }
+  .actions-back__button {
+    padding-left: 2.8125rem
+  }
+  .actions-back__button {
+    padding-right: 2.8125rem
   }
   .header__container {
     -webkit-column-gap: .3125rem;
@@ -4595,6 +5261,350 @@ h6 {
   .actions-guide-setup-guide-3__body {
     gap: 1.5625rem
   }
+  .page__hero-returns-refunds {
+    padding-bottom: 2.5rem
+  }
+  .page__policy-returns-refunds {
+    padding-top: 2.5rem
+  }
+  .page__policy-returns-refunds {
+    padding-bottom: 2.5rem
+  }
+  .page__guide-returns-refunds {
+    padding-top: 2.5rem
+  }
+  .page__guide-returns-refunds {
+    padding-bottom: 2.5rem
+  }
+  .page__answers-returns-refunds {
+    padding-top: 2.5rem
+  }
+  .page__answers-returns-refunds {
+    padding-bottom: 2.5rem
+  }
+  .page__need-returns-refunds {
+    padding-top: 2.5rem
+  }
+  .page__need-returns-refunds {
+    padding-bottom: 2.5rem
+  }
+  .page__actions-returns-refunds {
+    padding-top: 2.5rem
+  }
+  .hero-returns-refunds__body {
+    padding-top: 1.25rem
+  }
+  .hero-returns-refunds__body {
+    padding-bottom: 1.25rem
+  }
+  .hero-returns-refunds__body {
+    padding-left: 1.25rem
+  }
+  .hero-returns-refunds__body {
+    padding-right: 1.25rem
+  }
+  .hero-returns-refunds__title {
+    font-size: 3.4375rem
+  }
+  .hero-returns-refunds__title:not(:last-child) {
+    margin-bottom: .625rem
+  }
+  .hero-returns-refunds__text {
+    font-size: 1.5rem
+  }
+  .hero-returns-refunds__text:not(:last-child) {
+    margin-bottom: 2.5rem
+  }
+  .hero-returns-refunds__button {
+    padding-top: .78125rem
+  }
+  .hero-returns-refunds__button {
+    padding-bottom: .78125rem
+  }
+  .hero-returns-refunds__button {
+    padding-left: 2.5rem
+  }
+  .hero-returns-refunds__button {
+    padding-right: 2.5rem
+  }
+  .policy-returns-refunds__title:not(:last-child) {
+    margin-bottom: 1.5625rem
+  }
+  .policy-returns-refunds__body {
+    padding-top: .9375rem
+  }
+  .policy-returns-refunds__body {
+    padding-bottom: .9375rem
+  }
+  .policy-returns-refunds__body {
+    padding-left: .9375rem
+  }
+  .policy-returns-refunds__body {
+    padding-right: .9375rem
+  }
+  .policy-returns-refunds__list {
+    row-gap: .9375rem
+  }
+  .item-policy-returns-refunds {
+    padding-right: .9375rem
+  }
+  .item-policy-returns-refunds {
+    padding-left: .9375rem
+  }
+  .item-policy-returns-refunds {
+    padding-top: .9375rem
+  }
+  .item-policy-returns-refunds {
+    padding-bottom: .9375rem
+  }
+  .item-policy-returns-refunds__title {
+    font-size: 1.375rem
+  }
+  .item-policy-returns-refunds__title:not(:last-child) {
+    margin-bottom: .3125rem
+  }
+  .item-policy-returns-refunds__text {
+    font-size: 1rem
+  }
+  .item-policy-returns-refunds__subtext {
+    font-size: .875rem
+  }
+  .guide-returns-refunds__title:not(:last-child) {
+    margin-bottom: 1.5625rem
+  }
+  .guide-returns-refunds__body {
+    padding-top: .9375rem
+  }
+  .guide-returns-refunds__body {
+    padding-bottom: .9375rem
+  }
+  .guide-returns-refunds__body {
+    padding-left: .9375rem
+  }
+  .guide-returns-refunds__body {
+    padding-right: .9375rem
+  }
+  .guide-returns-refunds__list {
+    row-gap: .9375rem
+  }
+  .guide-returns-refunds__item {
+    padding-left: .625rem
+  }
+  .guide-returns-refunds__item {
+    padding-right: .625rem
+  }
+  .guide-returns-refunds__item {
+    padding-top: .625rem
+  }
+  .guide-returns-refunds__item {
+    padding-bottom: .625rem
+  }
+  .guide-returns-refunds__item {
+    -webkit-column-gap: .9375rem;
+    -moz-column-gap: .9375rem;
+    column-gap: .9375rem
+  }
+  .guide-returns-refunds__item::before {
+    font-size: 1.875rem
+  }
+  .guide-returns-refunds__item::before {
+    width: 3.125rem
+  }
+  .guide-returns-refunds__text {
+    font-size: 1.25rem
+  }
+  .guide-returns-refunds__subtext {
+    font-size: 1.25rem
+  }
+  .page__hero-payments-billing {
+    padding-bottom: 2.5rem
+  }
+  .page__methods-payments-billing {
+    padding-top: 2.5rem
+  }
+  .page__methods-payments-billing {
+    padding-bottom: 2.5rem
+  }
+  .page__invoices-payments-billing {
+    padding-top: 2.5rem
+  }
+  .page__invoices-payments-billing {
+    padding-bottom: 2.5rem
+  }
+  .page__adjustments-payments-billing {
+    padding-top: 2.5rem
+  }
+  .page__adjustments-payments-billing {
+    padding-bottom: 2.5rem
+  }
+  .page__answers-payments-billing {
+    padding-top: 2.5rem
+  }
+  .page__answers-payments-billing {
+    padding-bottom: 2.5rem
+  }
+  .page__need-payments-billing {
+    padding-top: 2.5rem
+  }
+  .page__need-payments-billing {
+    padding-bottom: 2.5rem
+  }
+  .page__actions-payments-billing {
+    padding-top: 2.5rem
+  }
+  .hero-payments-billing__body {
+    padding-top: 1.25rem
+  }
+  .hero-payments-billing__body {
+    padding-bottom: 1.25rem
+  }
+  .hero-payments-billing__body {
+    padding-left: 1.25rem
+  }
+  .hero-payments-billing__body {
+    padding-right: 1.25rem
+  }
+  .hero-payments-billing__title {
+    font-size: 3.4375rem
+  }
+  .hero-payments-billing__title:not(:last-child) {
+    margin-bottom: .625rem
+  }
+  .hero-payments-billing__text {
+    font-size: 1.375rem
+  }
+  .methods-payments-billing__title:not(:last-child) {
+    margin-bottom: 1.5625rem
+  }
+  .methods-payments-billing__protected {
+    font-size: 1.125rem
+  }
+  .methods-payments-billing__protected {
+    padding-left: 1.25rem
+  }
+  .methods-payments-billing__protected {
+    padding-right: 1.25rem
+  }
+  .methods-payments-billing__protected {
+    -webkit-column-gap: .3125rem;
+    -moz-column-gap: .3125rem;
+    column-gap: .3125rem
+  }
+  .methods-payments-billing__protected:not(:last-child) {
+    margin-bottom: 1.5625rem
+  }
+  .methods-payments-billing__list {
+    padding-top: .9375rem
+  }
+  .methods-payments-billing__list {
+    padding-bottom: .9375rem
+  }
+  .methods-payments-billing__list {
+    padding-left: .9375rem
+  }
+  .methods-payments-billing__list {
+    padding-right: .9375rem
+  }
+  .methods-payments-billing__list {
+    gap: .9375rem
+  }
+  .item-methods-payments-billing__content {
+    padding-top: .625rem
+  }
+  .item-methods-payments-billing__content {
+    padding-bottom: .625rem
+  }
+  .item-methods-payments-billing__content {
+    padding-left: .625rem
+  }
+  .item-methods-payments-billing__content {
+    padding-right: .625rem
+  }
+  .item-methods-payments-billing__image {
+    width: 2.5rem
+  }
+  .item-methods-payments-billing__image:not(:last-child) {
+    margin-bottom: .3125rem
+  }
+  .item-methods-payments-billing__title {
+    font-size: 1.5rem
+  }
+  .item-methods-payments-billing__title:not(:last-child) {
+    margin-bottom: .3125rem
+  }
+  .item-methods-payments-billing__text {
+    font-size: 1.25rem
+  }
+  .invoices-payments-billing__title:not(:last-child) {
+    margin-bottom: 1.5625rem
+  }
+  .invoices-payments-billing__list {
+    padding-top: .9375rem
+  }
+  .invoices-payments-billing__list {
+    padding-bottom: .9375rem
+  }
+  .invoices-payments-billing__list {
+    padding-left: .9375rem
+  }
+  .invoices-payments-billing__list {
+    padding-right: .9375rem
+  }
+  .invoices-payments-billing__item {
+    padding-top: .75rem
+  }
+  .invoices-payments-billing__item {
+    padding-bottom: .75rem
+  }
+  .invoices-payments-billing__item {
+    font-size: 1.125rem
+  }
+  .invoices-payments-billing__item {
+    padding-left: .3125rem
+  }
+  .invoices-payments-billing__item {
+    padding-right: .9375rem
+  }
+  .invoices-payments-billing__item {
+    -webkit-column-gap: .625rem;
+    -moz-column-gap: .625rem;
+    column-gap: .625rem
+  }
+  .adjustments-payments-billing__title:not(:last-child) {
+    margin-bottom: 1.5625rem
+  }
+  .adjustments-payments-billing__list {
+    padding-top: .9375rem
+  }
+  .adjustments-payments-billing__list {
+    padding-bottom: .9375rem
+  }
+  .adjustments-payments-billing__list {
+    padding-left: .9375rem
+  }
+  .adjustments-payments-billing__list {
+    padding-right: .9375rem
+  }
+  .adjustments-payments-billing__item {
+    padding-top: .75rem
+  }
+  .adjustments-payments-billing__item {
+    padding-bottom: .75rem
+  }
+  .adjustments-payments-billing__item {
+    font-size: 1.125rem
+  }
+  .adjustments-payments-billing__item {
+    padding-left: .3125rem
+  }
+  .adjustments-payments-billing__item {
+    padding-right: .9375rem
+  }
+  .adjustments-payments-billing__item {
+    -webkit-column-gap: .625rem;
+    -moz-column-gap: .625rem;
+    column-gap: .625rem
+  }
   .page__products {
     padding-bottom: 2.5rem
   }
@@ -4799,6 +5809,14 @@ h6 {
   .select {
     width: 65%
   }
+  .actions-back__body {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  .actions-back__button {
+    width: 75%
+  }
   .list-trusted-partners {
     display: none
   }
@@ -4836,6 +5854,20 @@ h6 {
   }
   .device-setup-guide-3__container {
     flex-direction: column
+  }
+  .hero-returns-refunds__body::after {
+    opacity: .3;
+    min-width: 15.625rem
+  }
+  .item-policy-returns-refunds__image {
+    align-self: flex-start
+  }
+  .hero-payments-billing__body::after {
+    opacity: .3;
+    min-width: 15.625rem
+  }
+  .methods-payments-billing__list {
+    grid-template-columns: repeat(auto-fit,minmax(min(18.75rem,100%),1fr))
   }
   .explorer__title {
     width: 95%
@@ -4948,6 +5980,12 @@ h6 {
     padding-bottom: 1.25rem
   }
 }
+@media (max-width:44.87375em) {
+  .item-methods-payments-billing {
+    max-height: 16.25rem;
+    width: 100%
+  }
+}
 @media (max-width:44.99875em) {
   .application__text {
     max-width: 75%
@@ -4964,6 +6002,14 @@ h6 {
   }
   .discover__text {
     max-width: 95%
+  }
+}
+@media (max-width:39.56125em) {
+  .hero-returns-refunds__actions {
+    flex-direction: column
+  }
+  .hero-returns-refunds__button {
+    width: 75%
   }
 }
 @media (max-width:39.62375em) {
@@ -5041,6 +6087,9 @@ h6 {
   .need-help__button {
     width: 100%
   }
+  .actions-back__button {
+    width: 100%
+  }
   .footer-blog-detail-main {
     flex-direction: column;
     align-items: flex-start
@@ -5072,11 +6121,23 @@ h6 {
   .actions-guide-setup-guide-3__button {
     width: 100%
   }
+  .hero-returns-refunds__button {
+    width: 100%
+  }
+  .guide-returns-refunds__item::before {
+    align-self: flex-start
+  }
   .explorer__text {
     width: 100%
   }
   .application__text {
     max-width: 100%
+  }
+}
+@media (max-width:29.9875em) {
+  .title-block {
+    text-align: center;
+    justify-content: center
   }
 }
 @media (max-width:29.49875em) {
@@ -5129,6 +6190,9 @@ h6 {
   }
   .hero-check-warranty-failure__actions {
     width: 100%
+  }
+  .item-policy-returns-refunds__image {
+    min-width: 3rem
   }
 }
 @media (max-width:22.56125em) {
@@ -5281,23 +6345,43 @@ h6 {
   .need-help__body {
     padding-right: clamp(1.5625rem ,1.0952102804rem + 2.3364485981vw ,3.125rem)
   }
-  .need-help__text {
+  .need-help__title {
     font-size: clamp(2.125rem ,1.863317757rem + 1.308411215vw ,3rem)
   }
-  .text-block__text {
-    padding-top: clamp(1.5625rem ,1.0952102804rem + 2.3364485981vw ,3.125rem)
+  .title-block {
+    padding-top: clamp(1.25rem ,.6892523364rem + 2.8037383178vw ,3.125rem)
   }
-  .text-block__text {
-    padding-bottom: clamp(1.5625rem ,1.0952102804rem + 2.3364485981vw ,3.125rem)
+  .title-block {
+    padding-bottom: clamp(1.25rem ,.6892523364rem + 2.8037383178vw ,3.125rem)
   }
-  .text-block__text {
-    padding-left: clamp(1.5625rem ,1.0952102804rem + 2.3364485981vw ,3.125rem)
+  .title-block {
+    padding-left: clamp(1.25rem ,.6892523364rem + 2.8037383178vw ,3.125rem)
   }
-  .text-block__text {
-    padding-right: clamp(1.5625rem ,1.0952102804rem + 2.3364485981vw ,3.125rem)
+  .title-block {
+    padding-right: clamp(1.25rem ,.6892523364rem + 2.8037383178vw ,3.125rem)
   }
-  .text-block__text {
-    font-size: clamp(2.25rem ,2.0257009346rem + 1.1214953271vw ,3rem)
+  .title-block {
+    font-size: clamp(1.75rem ,1.3761682243rem + 1.8691588785vw ,3rem)
+  }
+  .title-block {
+    -webkit-column-gap: clamp(.625rem ,.3446261682rem + 1.4018691589vw ,1.5625rem);
+    -moz-column-gap: clamp(.625rem ,.3446261682rem + 1.4018691589vw ,1.5625rem);
+    column-gap: clamp(.625rem ,.3446261682rem + 1.4018691589vw ,1.5625rem)
+  }
+  .title-block span {
+    width: clamp(1.875rem ,1.5946261682rem + 1.4018691589vw ,2.8125rem)
+  }
+  .title-block span {
+    height: clamp(1.875rem ,1.5946261682rem + 1.4018691589vw ,2.8125rem)
+  }
+  .answers-block__title:not(:last-child) {
+    margin-bottom: clamp(1.5625rem ,1.0952102804rem + 2.3364485981vw ,3.125rem)
+  }
+  .actions-back__button {
+    padding-left: clamp(2.8125rem ,1.1863317757rem + 8.1308411215vw ,8.25rem)
+  }
+  .actions-back__button {
+    padding-right: clamp(2.8125rem ,1.1863317757rem + 8.1308411215vw ,8.25rem)
   }
   .header__container {
     -webkit-column-gap: clamp(.3125rem ,.2190420561rem + .4672897196vw ,.625rem);
@@ -5957,6 +7041,350 @@ h6 {
   }
   .actions-guide-setup-guide-3__body {
     gap: clamp(1.5625rem ,1.3755841121rem + .9345794393vw ,2.1875rem)
+  }
+  .page__hero-returns-refunds {
+    padding-bottom: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__policy-returns-refunds {
+    padding-top: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__policy-returns-refunds {
+    padding-bottom: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__guide-returns-refunds {
+    padding-top: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__guide-returns-refunds {
+    padding-bottom: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__answers-returns-refunds {
+    padding-top: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__answers-returns-refunds {
+    padding-bottom: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__need-returns-refunds {
+    padding-top: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__need-returns-refunds {
+    padding-bottom: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__actions-returns-refunds {
+    padding-top: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .hero-returns-refunds__body {
+    padding-top: clamp(1.25rem ,.5023364486rem + 3.738317757vw ,3.75rem)
+  }
+  .hero-returns-refunds__body {
+    padding-bottom: clamp(1.25rem ,.5023364486rem + 3.738317757vw ,3.75rem)
+  }
+  .hero-returns-refunds__body {
+    padding-left: clamp(1.25rem ,.5023364486rem + 3.738317757vw ,3.75rem)
+  }
+  .hero-returns-refunds__body {
+    padding-right: clamp(1.25rem ,.5023364486rem + 3.738317757vw ,3.75rem)
+  }
+  .hero-returns-refunds__title {
+    font-size: clamp(3.4375rem ,2.5963785047rem + 4.2056074766vw ,6.25rem)
+  }
+  .hero-returns-refunds__title:not(:last-child) {
+    margin-bottom: clamp(.625rem ,.4567757009rem + .8411214953vw ,1.1875rem)
+  }
+  .hero-returns-refunds__text {
+    font-size: clamp(1.5rem ,1.4252336449rem + .3738317757vw ,1.75rem)
+  }
+  .hero-returns-refunds__text:not(:last-child) {
+    margin-bottom: clamp(2.5rem ,1.7710280374rem + 3.6448598131vw ,4.9375rem)
+  }
+  .hero-returns-refunds__button {
+    padding-top: clamp(.78125rem ,.6504088785rem + .6542056075vw ,1.21875rem)
+  }
+  .hero-returns-refunds__button {
+    padding-bottom: clamp(.78125rem ,.6504088785rem + .6542056075vw ,1.21875rem)
+  }
+  .hero-returns-refunds__button {
+    padding-left: clamp(2.5rem ,1.8177570093rem + 3.4112149533vw ,4.78125rem)
+  }
+  .hero-returns-refunds__button {
+    padding-right: clamp(2.5rem ,1.8177570093rem + 3.4112149533vw ,4.78125rem)
+  }
+  .policy-returns-refunds__title:not(:last-child) {
+    margin-bottom: clamp(1.5625rem ,1.0952102804rem + 2.3364485981vw ,3.125rem)
+  }
+  .policy-returns-refunds__body {
+    padding-top: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .policy-returns-refunds__body {
+    padding-bottom: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .policy-returns-refunds__body {
+    padding-left: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .policy-returns-refunds__body {
+    padding-right: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .policy-returns-refunds__list {
+    row-gap: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .item-policy-returns-refunds {
+    padding-right: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .item-policy-returns-refunds {
+    padding-left: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .item-policy-returns-refunds {
+    padding-top: clamp(.9375rem ,-.2026869159rem + 5.7009345794vw ,4.75rem)
+  }
+  .item-policy-returns-refunds {
+    padding-bottom: clamp(.9375rem ,-.2026869159rem + 5.7009345794vw ,4.75rem)
+  }
+  .item-policy-returns-refunds__title {
+    font-size: clamp(1.375rem ,.8890186916rem + 2.4299065421vw ,3rem)
+  }
+  .item-policy-returns-refunds__title:not(:last-child) {
+    margin-bottom: clamp(.3125rem ,.2190420561rem + .4672897196vw ,.625rem)
+  }
+  .item-policy-returns-refunds__text {
+    font-size: clamp(1rem ,.7757009346rem + 1.1214953271vw ,1.75rem)
+  }
+  .item-policy-returns-refunds__subtext {
+    font-size: clamp(.875rem ,.7628504673rem + .5607476636vw ,1.25rem)
+  }
+  .guide-returns-refunds__title:not(:last-child) {
+    margin-bottom: clamp(1.5625rem ,1.0952102804rem + 2.3364485981vw ,3.125rem)
+  }
+  .guide-returns-refunds__body {
+    padding-top: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .guide-returns-refunds__body {
+    padding-bottom: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .guide-returns-refunds__body {
+    padding-left: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .guide-returns-refunds__body {
+    padding-right: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .guide-returns-refunds__list {
+    row-gap: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .guide-returns-refunds__item {
+    padding-left: clamp(.625rem ,-.1226635514rem + 3.738317757vw ,3.125rem)
+  }
+  .guide-returns-refunds__item {
+    padding-right: clamp(.625rem ,-.1226635514rem + 3.738317757vw ,3.125rem)
+  }
+  .guide-returns-refunds__item {
+    padding-top: clamp(.625rem ,-.113317757rem + 3.691588785vw ,3.09375rem)
+  }
+  .guide-returns-refunds__item {
+    padding-bottom: clamp(.625rem ,-.113317757rem + 3.691588785vw ,3.09375rem)
+  }
+  .guide-returns-refunds__item {
+    -webkit-column-gap: clamp(.9375rem ,-.4643691589rem + 7.0093457944vw ,5.625rem);
+    -moz-column-gap: clamp(.9375rem ,-.4643691589rem + 7.0093457944vw ,5.625rem);
+    column-gap: clamp(.9375rem ,-.4643691589rem + 7.0093457944vw ,5.625rem)
+  }
+  .guide-returns-refunds__item::before {
+    font-size: clamp(1.875rem ,1.2394859813rem + 3.1775700935vw ,4rem)
+  }
+  .guide-returns-refunds__item::before {
+    width: clamp(3.125rem ,2.1904205607rem + 4.6728971963vw ,6.25rem)
+  }
+  .guide-returns-refunds__text {
+    font-size: clamp(1.25rem ,.8761682243rem + 1.8691588785vw ,2.5rem)
+  }
+  .guide-returns-refunds__subtext {
+    font-size: clamp(1.25rem ,.8761682243rem + 1.8691588785vw ,2.5rem)
+  }
+  .page__hero-payments-billing {
+    padding-bottom: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__methods-payments-billing {
+    padding-top: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__methods-payments-billing {
+    padding-bottom: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__invoices-payments-billing {
+    padding-top: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__invoices-payments-billing {
+    padding-bottom: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__adjustments-payments-billing {
+    padding-top: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__adjustments-payments-billing {
+    padding-bottom: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__answers-payments-billing {
+    padding-top: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__answers-payments-billing {
+    padding-bottom: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__need-payments-billing {
+    padding-top: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__need-payments-billing {
+    padding-bottom: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .page__actions-payments-billing {
+    padding-top: clamp(2.5rem ,2.3130841121rem + .9345794393vw ,3.125rem)
+  }
+  .hero-payments-billing__body {
+    padding-top: clamp(1.25rem ,.5023364486rem + 3.738317757vw ,3.75rem)
+  }
+  .hero-payments-billing__body {
+    padding-bottom: clamp(1.25rem ,.5023364486rem + 3.738317757vw ,3.75rem)
+  }
+  .hero-payments-billing__body {
+    padding-left: clamp(1.25rem ,.5023364486rem + 3.738317757vw ,3.75rem)
+  }
+  .hero-payments-billing__body {
+    padding-right: clamp(1.25rem ,.5023364486rem + 3.738317757vw ,3.75rem)
+  }
+  .hero-payments-billing__title {
+    font-size: clamp(3.4375rem ,2.5963785047rem + 4.2056074766vw ,6.25rem)
+  }
+  .hero-payments-billing__title:not(:last-child) {
+    margin-bottom: clamp(.625rem ,.4567757009rem + .8411214953vw ,1.1875rem)
+  }
+  .hero-payments-billing__text {
+    font-size: clamp(1.375rem ,1.2628504673rem + .5607476636vw ,1.75rem)
+  }
+  .methods-payments-billing__title:not(:last-child) {
+    margin-bottom: clamp(1.5625rem ,1.0952102804rem + 2.3364485981vw ,3.125rem)
+  }
+  .methods-payments-billing__protected {
+    font-size: clamp(1.125rem ,1.0876168224rem + .1869158879vw ,1.25rem)
+  }
+  .methods-payments-billing__protected {
+    padding-left: clamp(1.25rem ,-.6191588785rem + 9.3457943925vw ,7.5rem)
+  }
+  .methods-payments-billing__protected {
+    padding-right: clamp(1.25rem ,-.6191588785rem + 9.3457943925vw ,7.5rem)
+  }
+  .methods-payments-billing__protected {
+    -webkit-column-gap: clamp(.3125rem ,-.3417056075rem + 3.2710280374vw ,2.5rem);
+    -moz-column-gap: clamp(.3125rem ,-.3417056075rem + 3.2710280374vw ,2.5rem);
+    column-gap: clamp(.3125rem ,-.3417056075rem + 3.2710280374vw ,2.5rem)
+  }
+  .methods-payments-billing__protected:not(:last-child) {
+    margin-bottom: clamp(1.5625rem ,1.0952102804rem + 2.3364485981vw ,3.125rem)
+  }
+  .methods-payments-billing__list {
+    padding-top: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .methods-payments-billing__list {
+    padding-bottom: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .methods-payments-billing__list {
+    padding-left: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .methods-payments-billing__list {
+    padding-right: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .methods-payments-billing__list {
+    gap: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .item-methods-payments-billing__content {
+    padding-top: clamp(.625rem ,.5315420561rem + .4672897196vw ,.9375rem)
+  }
+  .item-methods-payments-billing__content {
+    padding-bottom: clamp(.625rem ,.5315420561rem + .4672897196vw ,.9375rem)
+  }
+  .item-methods-payments-billing__content {
+    padding-left: clamp(.625rem ,.5315420561rem + .4672897196vw ,.9375rem)
+  }
+  .item-methods-payments-billing__content {
+    padding-right: clamp(.625rem ,.5315420561rem + .4672897196vw ,.9375rem)
+  }
+  .item-methods-payments-billing__image {
+    width: clamp(2.5rem ,1.3785046729rem + 5.6074766355vw ,6.25rem)
+  }
+  .item-methods-payments-billing__image:not(:last-child) {
+    margin-bottom: clamp(.3125rem ,-.0613317757rem + 1.8691588785vw ,1.5625rem)
+  }
+  .item-methods-payments-billing__title {
+    font-size: clamp(1.5rem ,1.2009345794rem + 1.4953271028vw ,2.5rem)
+  }
+  .item-methods-payments-billing__title:not(:last-child) {
+    margin-bottom: clamp(.3125rem ,.2190420561rem + .4672897196vw ,.625rem)
+  }
+  .item-methods-payments-billing__text {
+    font-size: clamp(1.25rem ,1.1752336449rem + .3738317757vw ,1.5rem)
+  }
+  .invoices-payments-billing__title:not(:last-child) {
+    margin-bottom: clamp(1.5625rem ,1.0952102804rem + 2.3364485981vw ,3.125rem)
+  }
+  .invoices-payments-billing__list {
+    padding-top: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .invoices-payments-billing__list {
+    padding-bottom: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .invoices-payments-billing__list {
+    padding-left: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .invoices-payments-billing__list {
+    padding-right: clamp(.9375rem ,-.277453271rem + 6.0747663551vw ,5rem)
+  }
+  .invoices-payments-billing__item {
+    padding-top: clamp(.75rem ,.5257009346rem + 1.1214953271vw ,1.5rem)
+  }
+  .invoices-payments-billing__item {
+    padding-bottom: clamp(.75rem ,.5257009346rem + 1.1214953271vw ,1.5rem)
+  }
+  .invoices-payments-billing__item {
+    font-size: clamp(1.125rem ,1.0128504673rem + .5607476636vw ,1.5rem)
+  }
+  .invoices-payments-billing__item {
+    padding-left: clamp(.3125rem ,-.1547897196rem + 2.3364485981vw ,1.875rem)
+  }
+  .invoices-payments-billing__item {
+    padding-right: clamp(.9375rem ,.6571261682rem + 1.4018691589vw ,1.875rem)
+  }
+  .invoices-payments-billing__item {
+    -webkit-column-gap: clamp(.625rem ,.5315420561rem + .4672897196vw ,.9375rem);
+    -moz-column-gap: clamp(.625rem ,.5315420561rem + .4672897196vw ,.9375rem);
+    column-gap: clamp(.625rem ,.5315420561rem + .4672897196vw ,.9375rem)
+  }
+  .adjustments-payments-billing__title:not(:last-child) {
+    margin-bottom: clamp(1.5625rem ,1.0952102804rem + 2.3364485981vw ,3.125rem)
+  }
+  .adjustments-payments-billing__list {
+    padding-top: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .adjustments-payments-billing__list {
+    padding-bottom: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .adjustments-payments-billing__list {
+    padding-left: clamp(.9375rem ,.2832943925rem + 3.2710280374vw ,3.125rem)
+  }
+  .adjustments-payments-billing__list {
+    padding-right: clamp(.9375rem ,-.277453271rem + 6.0747663551vw ,5rem)
+  }
+  .adjustments-payments-billing__item {
+    padding-top: clamp(.75rem ,.5257009346rem + 1.1214953271vw ,1.5rem)
+  }
+  .adjustments-payments-billing__item {
+    padding-bottom: clamp(.75rem ,.5257009346rem + 1.1214953271vw ,1.5rem)
+  }
+  .adjustments-payments-billing__item {
+    font-size: clamp(1.125rem ,1.0128504673rem + .5607476636vw ,1.5rem)
+  }
+  .adjustments-payments-billing__item {
+    padding-left: clamp(.3125rem ,-.1547897196rem + 2.3364485981vw ,1.875rem)
+  }
+  .adjustments-payments-billing__item {
+    padding-right: clamp(.9375rem ,.6571261682rem + 1.4018691589vw ,1.875rem)
+  }
+  .adjustments-payments-billing__item {
+    -webkit-column-gap: clamp(.625rem ,.5315420561rem + .4672897196vw ,.9375rem);
+    -moz-column-gap: clamp(.625rem ,.5315420561rem + .4672897196vw ,.9375rem);
+    column-gap: clamp(.625rem ,.5315420561rem + .4672897196vw ,.9375rem)
   }
   .page__products {
     padding-bottom: clamp(2.5rem ,1.3785046729rem + 5.6074766355vw ,6.25rem)
