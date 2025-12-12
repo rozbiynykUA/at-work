@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20251208123100">
+	<link rel="stylesheet" href="css/style.min.css?_v=20251212095144">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,14 +14,16 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-scroll="80" data-scroll-show class="header">
 			<div class="header__container">
 				<div class="header__logo">
-					<img src="img/header/logo.webp" alt="Logo 5G online">
+					<a href="home.html">
+						<img src="img/header/logo.webp" alt="Logo 5G online">
+					</a>
 				</div>
 				<form data-da=".menu__body, 1024, 0" action="#" class="header__form form-header">
 					<label>
-						<input type="search" class="form-header__search">
+						<input type="search" placeholder="Search..." class="form-header__search">
 					</label>
 					<input type="submit" value="" class="form-header__button">
 					<span class="form-header__icon"><img src="img/header/search.svg" alt="Image"></span>
@@ -31,16 +33,16 @@
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li>
-								<a href="#">PRODUCTS</a>
-								<ul class="menu__submenu">
+								<span>PRODUCTS</span>
+								<ul>
 									<li><a href="#">Routers</a></li>
 									<li><a href="#">Antennas</a></li>
 									<li><a href="#">USB Dongles</a></li>
 								</ul>
 							</li>
-							<li><a href="#">ABOUT US</a></li>
-							<li><a href="#">BLOG</a></li>
-							<li><a href="#">SUPPORT</a></li>
+							<li><a href="about.html">ABOUT US</a></li>
+							<li><a href="blog.html">BLOG</a></li>
+							<li><a href="support.html">SUPPORT</a></li>
 						</ul>
 						<div class="menu__actions">
 							<button class="menu__button">My Cart</button>
@@ -215,97 +217,137 @@
 							<button data-watch data-watch-once class="form-subscribe__button button button--black">Subscribe</button>
 						</form>
 					</div>
-					<div class="subscribe__social social-subscribe">
-						<div data-watch data-watch-once class="social-subscribe__label">Stay Connected</div>
-						<ul class="social-subscribe__list">
-							<li data-watch data-watch-once class="social-subscribe__item">
-								<a href="#" target="_blank" aria-label="go to linkedin" class="social-subscribe__link"><img src="img/subscribe/linkedin.webp" alt="Linkedin icon"></a>
-							</li>
-							<li data-watch data-watch-once class="social-subscribe__item">
-								<a href="#" target="_blank" aria-label="go to x" class="social-subscribe__link"><img src="img/subscribe/x.webp" alt="X icon"></a>
-							</li>
-							<li data-watch data-watch-once class="social-subscribe__item">
-								<a href="#" target="_blank" aria-label="go to youtube" class="social-subscribe__link"><img src="img/subscribe/youtube.webp" alt="YouTube icon"></a>
-							</li>
-							<li data-watch data-watch-once class="social-subscribe__item">
-								<a href="#" target="_blank" aria-label="go to facebook" class="social-subscribe__link"><img src="img/subscribe/facebook.webp" alt="Facebook icon"></a>
-							</li>
-						</ul>
-					</div>
 				</div>
 			</section>
 		</main>
 		<footer class="footer">
-			<div class="footer__menus">
-				<div class="footer__container">
-					<div class="footer__row">
-						<div class="footer__column">
-							<h2 class="footer__title">Company</h2>
-							<ul class="footer__list">
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Terms & Conditions</a></li>
-								<li><a href="#">Our Mission</a></li>
-								<li><a href="#">Contact Us</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-							</ul>
-						</div>
-						<div class="footer__column">
-							<h2 class="footer__title">Shop</h2>
-							<ul class="footer__list">
-								<li><a href="#">4G Routers</a></li>
-								<li><a href="#">5G Routers</a></li>
-								<li><a href="#">Antennas</a></li>
-								<li><a href="#">Bundles</a></li>
-								<li><a href="#">Services</a></li>
-								<li><a href="#">New Arrivals</a></li>
-							</ul>
-						</div>
-						<div class="footer__column">
-							<h2 class="footer__title">Support / Help</h2>
-							<ul class="footer__list">
-								<li><a href="#">FAQ</a></li>
-								<li><a href="#">Shipping & Delivery</a></li>
-								<li><a href="#">Returns & Warranty</a></li>
-								<li><a href="#">Payment Options</a></li>
-								<li><a href="#">Contact Support</a></li>
-								<li><a href="#">Compatibility Guide</a></li>
-							</ul>
-						</div>
-						<div class="footer__column">
-							<h2 class="footer__title">Resources</h2>
-							<ul class="footer__list">
-								<li><a href="#">Blog</a></li>
-								<li><a href="#">Setup Guides</a></li>
-								<li><a href="#">4G vs 5G Explained</a></li>
-								<li><a href="#">How to Choose the Right Antenna</a></li>
-								<li><a href="#">Compatibility Guide</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="footer__bottom">
+			<div class="footer__content">
 				<div class="footer__container">
 					<div class="footer__body">
-						<div class="footer__info">
-							© 2025 <strong>5G Online</strong>. All rights reserved.
+						<div class="footer__actions actions-footer">
+							<div class="actions-footer__logo logo-footer-actions">
+								<h2 class="logo-footer-actions__title">5G ONLINE</h2>
+								<div class="logo-footer-actions__text">
+									<p>
+										Your Gateway to Uninterrupted Connectivity.
+									</p>
+								</div>
+							</div>
+							<div class="actions-footer__links">
+								<div class="actions-footer__social social-actions-footer">
+									<div class="social-actions-footer__label">Stay Connected</div>
+									<ul class="social-actions-footer__list">
+										<li class="social-actions-footer__item">
+											<a href="#" class="social-actions-footer__link">
+												<img src="img/footer/social-youtube-icon.svg" alt="Youtube logo icon">
+											</a>
+										</li>
+										<li class="social-actions-footer__item">
+											<a href="#" class="social-actions-footer__link">
+												<img src="img/footer/social-linkedin-icon.svg" alt="Linkedin logo icon">
+											</a>
+										</li>
+										<li class="social-actions-footer__item">
+											<a href="#" class="social-actions-footer__link">
+												<img src="img/footer/social-facebook-icon.svg" alt="Facebook logo icon">
+											</a>
+										</li>
+										<li class="social-actions-footer__item">
+											<a href="#" class="social-actions-footer__link">
+												<img src="img/footer/social-x-icon.svg" alt="X logo icon">
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="actions-footer__payments payments-actions-footer">
+									<div class="payments-actions-footer__label">Accepted Payments</div>
+									<ul class="payments-actions-footer__list">
+										<li class="payments-actions-footer__item">
+											<a href="#" class="payments-actions-footer__link">
+												<img src="img/footer/ideal-logo-icon.svg" alt="IDeal logo icon">
+											</a>
+										</li>
+										<li class="payments-actions-footer__item">
+											<a href="#" class="payments-actions-footer__link">
+												<img src="img/footer/mastercard-logo-icon.svg" alt="MasterCard logo icon">
+											</a>
+										</li>
+										<li class="payments-actions-footer__item">
+											<a href="#" class="payments-actions-footer__link">
+												<img src="img/footer/visa-logo-icon.svg" alt="VISA logo icon">
+											</a>
+										</li>
+										<li class="payments-actions-footer__item">
+											<a href="#" class="payments-actions-footer__link">
+												<img src="img/footer/bancontact-logo-icon.svg" alt="Bancontact logo icon">
+											</a>
+										</li>
+										<li class="payments-actions-footer__item">
+											<a href="#" class="payments-actions-footer__link">
+												<img src="img/footer/american-express-logo-icon.svg" alt="American Express logo icon">
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
 						</div>
-						<div class="footer__payments payments-footer">
-							<div class="payments-footer__label">Accepted Payments:</div>
-							<div class="payments-footer__method">
-								<img class="payments-footer__icon payments-footer__icon--master" src="img/footer/master-card.webp" alt="MasterCard Logo">
-								<img class="payments-footer__icon payments-footer__icon--visa" src="img/footer/visa.webp" alt="Visa Logo">
-								<img class="payments-footer__icon payments-footer__icon--american" src="img/footer/american-express.webp" alt="American Express Logo">
-								<img class="payments-footer__icon payments-footer__icon--contact" src="img/footer/bancontact.webp" alt="Bancontact Logo">
-								<img class="payments-footer__icon payments-footer__icon--ideal" src="img/footer/ideal.webp" alt="IDeal Logo">
+						<div class="footer__menus">
+							<div class="footer__column column-footer">
+								<h3 class="column-footer__title">Company</h3>
+								<ul class="column-footer__list">
+									<li><a href="#">About Us</a></li>
+									<li><a href="#">Our Mission</a></li>
+									<li><a href="#">Contact Us</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+									<li><a href="#">Terms & Conditions</a></li>
+								</ul>
+							</div>
+							<div class="footer__column column-footer">
+								<h3 class="column-footer__title">Shop</h3>
+								<ul class="column-footer__list">
+									<li><a href="#">4G Routers</a></li>
+									<li><a href="#">5G Routers</a></li>
+									<li><a href="#">Antennas</a></li>
+									<li><a href="#">Bundles</a></li>
+									<li><a href="#">New Arrivals</a></li>
+								</ul>
+							</div>
+							<div class="footer__column column-footer">
+								<h3 class="column-footer__title">Support / Help</h3>
+								<ul class="column-footer__list">
+									<li><a href="#">FAQ</a></li>
+									<li><a href="#">Shipping & Delivery</a></li>
+									<li><a href="#">Returns & Warranty</a></li>
+									<li><a href="#">Payment Options</a></li>
+									<li><a href="#">Contact Support</a></li>
+								</ul>
+							</div>
+							<div class="footer__column column-footer">
+								<h3 class="column-footer__title">Resources</h3>
+								<ul class="column-footer__list">
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Setup Guides</a></li>
+									<li><a href="#">4G vs 5G Explained</a></li>
+									<li><a href="#">How to Choose the Right Antenna</a></li>
+									<li><a href="#">Compatibility Guide</a></li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<div class="footer__info info-footer">
+				<div class="footer__container">
+					<div class="info-footer__text">
+						<p>
+							© 2025 5G Online. All rights reserved.
+						</p>
+					</div>
+				</div>
+			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20251208123100"></script>
+	<script src="js/app.min.js?_v=20251212095144"></script>
 </body>
 
 </html>
