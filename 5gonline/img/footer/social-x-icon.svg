@@ -1,0 +1,20 @@
+<svg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30.000000" height="30.000000" fill="none" customFrame="#000000">
+	<defs>
+		<filter id="pixso_custom_mask_type_outline">
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 " />
+		</filter>
+	</defs>
+	<mask id="mask_1" width="30.000000" height="30.000000" x="0.000000" y="0.000000" maskUnits="userSpaceOnUse">
+		<g filter="url(#pixso_custom_mask_type_outline)">
+			<g id="SVGG1Ot4cAD" />
+		</g>
+	</mask>
+	<rect id="prime:twitter" width="30.000000" height="30.000000" x="0.000000" y="0.000000" fill="rgb(255,255,255)" fill-opacity="0" />
+	<g id="Group">
+		<g id="Clip path group" mask="url(#mask_1)">
+			<g id="Group">
+				<path id="Vector" d="M23.625 1.40527L28.2257 1.40527L18.1757 12.921L30 28.5938L20.7429 28.5938L13.4871 19.0903L5.19429 28.5938L0.589286 28.5938L11.3379 16.2724L0 1.40742L9.49286 1.40742L16.0414 10.0924L23.625 1.40527ZM22.0071 25.8338L24.5571 25.8338L8.1 4.0217L5.36571 4.0217L22.0071 25.8338Z" fill="rgb(255,255,255)" fill-rule="nonzero" />
+			</g>
+		</g>
+	</g>
+</svg>
